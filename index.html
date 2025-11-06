@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo avançado</title>
     
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/css/estilo.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
 
-    <div id="container">
-    <header><h1>ToDo avançado</h1></header>
+    <div id="todo-container">
+    <header><h1>Todo avançado</h1></header>
     <form id="todo-form">
         <p>Adcionar sua tarefa:</p>
         <div class="form-control">
@@ -21,7 +21,7 @@
             </button>
         </div>
     </form>
-    <form id="edit-form">
+    <form id="edit-form" class="hide">
         <p>Edite a sua tarefa</p>
         
         <div class="form-control">
@@ -32,7 +32,7 @@
         </div>
         <button id="cancel-edit-btn">Cancelar</button>
     </form>
-    <div id="too-bar">
+    <div id="toolbar">
         <div id="search">
             <h4>Pesquisar:</h4>
             <form >
@@ -52,7 +52,7 @@
         </div>
     </div>
     <div id="todo-list">
-        <div class="todo">
+        <div class="todo done">
             <h3>Estou fazendo alguma coisa</h3>
             <button class="finish-todo">
                 <i class="fa-solid fa-check"></i>
@@ -64,7 +64,7 @@
                 <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
-        <div class="todo">
+        <div class="todo ">
             <h3>Estudar Javascript</h3>
             <button class="finish-todo">
                 <i class="fa-solid fa-check"></i>
